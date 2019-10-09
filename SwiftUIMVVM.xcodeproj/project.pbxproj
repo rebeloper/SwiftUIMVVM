@@ -13,6 +13,10 @@
 		C911684C234DADB100212368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C911684B234DADB100212368 /* Assets.xcassets */; };
 		C911684F234DADB100212368 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C911684E234DADB100212368 /* Preview Assets.xcassets */; };
 		C9116852234DADB100212368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9116850234DADB100212368 /* LaunchScreen.storyboard */; };
+		C911685E234DAE2400212368 /* MVVMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C911685D234DAE2400212368 /* MVVMUser.swift */; };
+		C9116860234DAE9300212368 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C911685F234DAE9300212368 /* UsersViewModel.swift */; };
+		C9116862234DAEE000212368 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9116861234DAEE000212368 /* RowView.swift */; };
+		C9116864234DAF1400212368 /* RemoteImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9116863234DAF1400212368 /* RemoteImageUrl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		C911684E234DADB100212368 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C9116851234DADB100212368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9116853234DADB100212368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C911685D234DAE2400212368 /* MVVMUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMUser.swift; sourceTree = "<group>"; };
+		C911685F234DAE9300212368 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		C9116861234DAEE000212368 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		C9116863234DAF1400212368 /* RemoteImageUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageUrl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,12 @@
 		C9116844234DADB000212368 /* SwiftUIMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C9116859234DADDC00212368 /* Model */,
+				C911685A234DADE600212368 /* View */,
+				C911685B234DADEE00212368 /* ViewModel */,
+				C911685C234DADF600212368 /* Helpers */,
 				C9116845234DADB000212368 /* AppDelegate.swift */,
 				C9116847234DADB000212368 /* SceneDelegate.swift */,
-				C9116849234DADB000212368 /* ContentView.swift */,
 				C911684B234DADB100212368 /* Assets.xcassets */,
 				C9116850234DADB100212368 /* LaunchScreen.storyboard */,
 				C9116853234DADB100212368 /* Info.plist */,
@@ -73,6 +84,39 @@
 				C911684E234DADB100212368 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9116859234DADDC00212368 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C911685D234DAE2400212368 /* MVVMUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C911685A234DADE600212368 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9116849234DADB000212368 /* ContentView.swift */,
+				C9116861234DAEE000212368 /* RowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C911685B234DADEE00212368 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C911685F234DAE9300212368 /* UsersViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C911685C234DADF600212368 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C9116863234DAF1400212368 /* RemoteImageUrl.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9116846234DADB000212368 /* AppDelegate.swift in Sources */,
+				C9116862234DAEE000212368 /* RowView.swift in Sources */,
 				C9116848234DADB000212368 /* SceneDelegate.swift in Sources */,
+				C911685E234DAE2400212368 /* MVVMUser.swift in Sources */,
+				C9116864234DAF1400212368 /* RemoteImageUrl.swift in Sources */,
 				C911684A234DADB000212368 /* ContentView.swift in Sources */,
+				C9116860234DAE9300212368 /* UsersViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
