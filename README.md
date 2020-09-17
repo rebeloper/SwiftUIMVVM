@@ -19,3 +19,5 @@ Again, a huge congrats to you for taking this step. This truly is going to be a 
 
 Let’s get to work!
 -- Alex
+
+https://www.youtube.com/watch?v=EhtK_H9LsYQ&list=PL_csAAO9PQ8YzCQmaDdcOc7nLmht69Clz&index=2
